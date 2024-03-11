@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            width: 100%; /*untuk ngatur supaya img berukuran 100% box yang telah disetting display grid*/
+        }
+        .container {
+            background-color: lightgrey;
+        }
+        .konten {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .team {
+            padding: 20px;
+            background-color: white;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        /* Menu */
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            background: linear-gradient(90deg, rgba(7,0,120,1) 0%, rgba(9,9,121,1) 0%, rgba(44,153,221,1) 63%, rgba(0,212,255,1) 100%);
+            padding: 10px;
+        }
+        .menu ul {
+            list-style: none;
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+
+            <div class="brand">
+                <h1>NBA Store</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="">Jerseys</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="konten">
+            <div class="team">
+                <img src="img/bucks.png" alt="bucks">
+                <h2>Milwaukee Bucks</h2>
+            </div>
+            <div class="team">
+                <img src="img/bulls.png" alt="bulls">
+                <h2>Chicago Bulls</h2>
+            </div>
+            <div class="team">
+                <img src="img/celtics.png" alt="celtics">
+                <h2>Boston Celtics</h2>
+            </div>
+            <div class="team">
+                <img src="img/cleveland.png" alt="cleveland" height="200px">
+                <h2>Cleveland Cavaliers</h2>
+            </div>
+            <div class="team">
+                <img src="img/phili.png" alt="phili">
+                <h2>Philadelphia 76ers</h2>
+            </div>
+            <div class="team">
+                <img src="img/brooklyn.png" alt="">
+                <h2>Brooklyn Nets</h2>
+            </div>
+            
+        </di>
+    </div>
+</body>
+</html>
